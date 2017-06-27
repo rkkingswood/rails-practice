@@ -15,6 +15,9 @@ posts = Post.all
  )
 end
 
+Post.find_or_create_by!(title: "Stranger Danger", body: "would  be a great band name!")
+Comment.find_or_create_by!(body: "I prefer Taco Meet")
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
